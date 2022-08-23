@@ -16,7 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css">
-    
+
   </head>
   <body>
     <!-- Шапка -->
@@ -24,16 +24,12 @@
       <div class="conteiner page-header__conteiner">
         <nav class="main-nav">
           <a href="./index.html" lang="en" class="logo">Web<span class="logo__name">Studio</span></a>
-          <button type="button" class="button-menu--open" aria-expanded="false" aria-controls="menu-conteiner">
-            <svg width="40" height="40" aria-label="Меню" class="button-menu__open">
-              <use href="./img/icons.svg/icons.svg#icon-open" class="button-menu__svg"></use>
 
-            </svg>
           </button>
           <div class="menu" >
             <ul class="list main-nav__group">
-              <li class="main-nav__list"><a href="./index.html" class="link main-nav__link  ">Студія</a></li>
-              <li class="main-nav__list"><a href="./portfolio.html" class="link main-nav__link main-nav__link--page">Портфоліо</a></li>
+              <li class="main-nav__list"><a href="./index.html" class="link main-nav__link  main-nav__link--page">Студія</a></li>
+              <li class="main-nav__list"><a href="./portfolio.html" class="link main-nav__link ">Портфоліо</a></li>
               <li class="main-nav__list"><a href="" class="link main-nav__link ">Контакти</a></li>
             </ul>
           
@@ -48,7 +44,44 @@
             </ul>
           </div>
         </nav>
+        <button type="button" class="button-menu--open" data-menu-open>
+          <svg width="40" height="40" aria-label="Меню" class="button-menu__open" >
+            <use href="./img/icons.svg/icons.svg#icon-open" class="button-menu__svg"></use>
+
+          </svg>
       </div>
+          <!-- menu conteiner -->
+    <div class="menu-conteiner" id="menu-conteiner" data-menu>
+      <div class="conteiner menu-conteiner__mob">
+        <button type="button" class="button-menu-mob button-menu-mob--close" data-menu-close>
+          <svg width="40" height="40" aria-label="Меню" class="button-menu-mob__close">
+            
+            <use href="./img/icons.svg/icons.svg#icon-close" class="button-menu-mob__svg"></use>
+          </svg>
+        </button>
+        <ul class="list main-nav-mob__group">
+          <li class="main-nav-mob__list"><a href="./index.html" class="link main-nav-mob__link  ">Студія</a></li>
+          <li class="main-nav-mob__list"><a href="./portfolio.html" class="link main-nav-mob__link main-nav__link--page">Портфоліо</a></li>
+          <li class="main-nav-mob__list"><a href="" class="link main-nav-mob__link ">Контакти</a></li>
+        </ul>
+      
+        <ul class="auth-nav-mob list">
+        <li class="auth-nav-mob__list">
+          <a href="mailto:info@devstudio.com" class="link auth-nav-mob__link auth-nav-mob__link--mail"><svg class="auth-nav-mob__svg" width="16" height="12"><use href="./img/icons.svg/icons.svg#icon-envelope" class='auth-nav-mob__use'></use></svg>
+            info@devstudio.com</a>
+        </li>
+        <li class="auth-nav-mob__list">
+          <a href="tel:+380961111111" class="link auth-nav-mob__link auth-nav-mob__link--tel"><svg class="auth-nav-mob__svg" width="10" height="16"><use href="./img/icons.svg/icons.svg#icon-smartphone" class="auth-nav-mob__use"></use></svg>+38 096 111 11 11</a>
+        </li>
+        </ul>
+        <ul class="media-nav--mob">
+          <li class="media-nav__list list"><a href="" class="link media-nav__link">Instagram</a></li>
+          <li class="media-nav__list list"><a href="" class="link media-nav__link">Twitter</a></li>
+          <li class="media-nav__list list"><a href="" class="link media-nav__link">Facebook</a></li>
+          <li class="media-nav__list list"><a href="" class="link media-nav__link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
     </header>
     <main>
       <!-- портфолио -->
