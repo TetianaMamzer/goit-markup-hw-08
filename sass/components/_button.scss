@@ -1,0 +1,39 @@
+.button {
+  display: inline-flex;
+  position: relative;
+  color: var(--white-text-color);
+  background: var(--accent-background);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 24px;
+
+  overflow: hidden;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-second-color);
+  }
+
+  @media screen and (min-width: 1200) {
+    padding: 10px 32px;
+  }
+}
+
+.button-menu {
+  display: inline-flex;
+
+  padding: 0;
+  border: 0;
+  color: var(--black-text-color);
+  background-color: transparent;
+}

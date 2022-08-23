@@ -1,0 +1,34 @@
+.logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+  text-decoration: none;
+
+  &.logo--footer {
+    display: flex;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width:1200px) {
+      text-align: start;
+      justify-content: start;
+    }
+  }
+}
+.logo__name {
+  color: var(--black-text-color);
+
+  &--second {
+    color: var(--white-text-color);
+  }
+}

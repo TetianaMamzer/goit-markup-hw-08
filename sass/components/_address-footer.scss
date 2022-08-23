@@ -1,0 +1,29 @@
+.address {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.address__list {
+  margin-bottom: 8px;
+
+  &:nth-child(3n) {
+    margin-bottom: 0;
+  }
+}
+
+.address__maps {
+  color: var(--white-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address__contacts {
+  color: var(--footer-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
