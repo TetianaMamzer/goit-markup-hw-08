@@ -284,6 +284,7 @@ textarea {
 
 .media-nav--mob {
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   align-items: center;
   margin-top: 64px;
@@ -298,8 +299,8 @@ textarea {
 .media-nav__list:not(:first-child) {
   padding-left: 10px;
 }
-.media-nav__list + .media-nav__list {
-  border-left: 1px solid rgba(33, 33, 33, 0.2);
+.media-nav__list:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .media-nav__link {
