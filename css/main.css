@@ -902,7 +902,7 @@ footer {
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  min-width: 450px;
+  width: 100%;
   padding: 15px 16px;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -919,6 +919,11 @@ footer {
 }
 .form-footer__input:focus, .form-footer__input:hover {
   border: 1px solid var(--accent-background);
+}
+@media screen and (min-width: 480px) {
+  .form-footer__input {
+    min-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-footer__input {
@@ -965,7 +970,6 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) translateY(0);
-  width: 300px;
   background-color: var(--primary-background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
